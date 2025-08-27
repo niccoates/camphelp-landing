@@ -26,9 +26,9 @@
         />
         <meta
             property="og:image"
-            content="https://camphelp.io/images/og-image.jpg"
+            content="https://www.camphelp.io/images/og-image.jpg"
         />
-        <meta property="og:url" content="https://camphelp.io/" />
+        <meta property="og:url" content="https://www.camphelp.io/" />
 
         <!-- Twitter -->
         <meta name="twitter:card" content="summary_large_image" />
@@ -42,7 +42,7 @@
         />
         <meta
             name="twitter:image"
-            content="https://camphelp.io/images/og-image.jpg"
+            content="https://www.camphelp.io/images/og-image.jpg"
         />
 
         <!-- Favicons -->
@@ -60,7 +60,6 @@
 
         <!-- Security headers -->
         <meta http-equiv="X-Content-Type-Options" content="nosniff" />
-        <meta http-equiv="X-Frame-Options" content="DENY" />
     </head>
     <body class="bg-white text-gray-700">
         <!-- Navigation -->
@@ -79,14 +78,16 @@
                     <div class="flex items-center space-x-8">
                         <a
                             href="#features"
-                            class="text-sm text-gray-700 hover:text-primary-600 transition-colors"
+                            class="hidden md:inline-block text-sm text-gray-700 hover:text-primary-600 transition-colors"
                             >Features</a
                         >
+
                         <a
                             href="#pricing"
-                            class="text-sm text-gray-700 hover:text-primary-600 transition-colors"
+                            class="hidden md:inline-block text-sm text-gray-700 hover:text-primary-600 transition-colors"
                             >Pricing</a
                         >
+
                         <a
                             href="#contact"
                             class="bg-primary-600 text-white px-3 py-1.5 text-sm rounded-md hover:bg-primary-700 transition-colors"
@@ -99,93 +100,97 @@
 
         <!-- Hero Section -->
         <section class="hero-gradient pt-40 pb-20 overflow-hidden">
-            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <div
-                    class="inline-flex items-center bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-sm font-medium mb-6"
-                >
-                    <span
-                        class="w-2 h-2 bg-primary-500 rounded-full mr-2"
-                    ></span>
-                    Coming Soon
-                </div>
-                <h1
-                    class="text-4xl lg:text-5xl font-semibold text-gray-900 leading-tight mb-6"
-                >
-                    Help Portal for
-                    <span class="text-primary-600">Campsites</span>
-                </h1>
-                <p
-                    class="text-lg text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto"
-                >
-                    Create a comprehensive help portal for your campers. Reduce
-                    inquiries, improve satisfaction, and let your guests find
-                    answers instantly.
-                </p>
-
-                <!-- Waitlist Form -->
-                <div class="max-w-md mx-auto mb-12">
-                    <div class="newsletter-form-container">
-                        <form
-                            class="newsletter-form flex gap-3"
-                            action="https://app.loops.so/api/newsletter-form/cmesq72rj1hgt210i1a3893c8"
-                            method="POST"
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col lg:flex-row items-center gap-12">
+                    <!-- Left Column: Copy and Form -->
+                    <div class="flex-1 text-center lg:text-left">
+                        <div
+                            class="inline-flex items-center bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-sm font-medium mb-6"
                         >
-                            <input
-                                class="newsletter-form-input text-sm flex-1 px-3 py-2 rounded-lg border text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-500 bg-white/95 placeholder-gray-500"
-                                name="newsletter-form-input"
-                                type="email"
-                                placeholder="Enter your email"
-                                required
-                            />
-                            <button
-                                type="submit"
-                                class="newsletter-form-button text-sm bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors font-semibold"
-                            >
-                                Join Waitlist
-                            </button>
-                            <button
-                                type="button"
-                                class="newsletter-loading-button bg-primary-600 text-white text-sm px-6 py-2 rounded-lg font-semibold hidden"
-                            >
-                                Please wait...
-                            </button>
-                        </form>
-                        <div class="newsletter-success hidden">
-                            <p
-                                class="newsletter-success-message text-primary-600 text-normal font-medium mt-2 text-center"
-                            >
-                                Thanks, you're the waitlist! We'll be in touch
-                                soon 🥳
-                            </p>
+                            <span
+                                class="w-2 h-2 bg-primary-500 rounded-full mr-2"
+                            ></span>
+                            Coming Soon
                         </div>
-                        <div class="newsletter-error hidden">
-                            <p
-                                class="newsletter-error-message text-red-600 text-sm mt-2 text-center"
-                            >
-                                Oops! Something went wrong, please try again
-                            </p>
+                        <h1
+                            class="text-4xl lg:text-5xl font-semibold text-gray-900 leading-tight mb-6"
+                        >
+                            Help Portal for
+                            <span class="text-primary-600">Campsites</span>
+                        </h1>
+                        <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                            Create a comprehensive help portal for your campers.
+                            Reduce inquiries, improve satisfaction, and let your
+                            guests find answers instantly.
+                        </p>
+
+                        <!-- Waitlist Form -->
+                        <div class="max-w-md mx-auto lg:mx-0">
+                            <div class="newsletter-form-container">
+                                <form
+                                    class="newsletter-form flex gap-3"
+                                    action="https://app.loops.so/api/newsletter-form/cmesq72rj1hgt210i1a3893c8"
+                                    method="POST"
+                                >
+                                    <input
+                                        class="newsletter-form-input text-sm flex-1 px-3 py-2 rounded-lg border text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-500 bg-white/95 placeholder-gray-500"
+                                        name="newsletter-form-input"
+                                        type="email"
+                                        placeholder="Enter your email"
+                                        required
+                                    />
+                                    <button
+                                        type="submit"
+                                        class="newsletter-form-button text-sm bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors font-semibold"
+                                    >
+                                        Join Waitlist
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="newsletter-loading-button bg-primary-600 text-white text-sm px-6 py-2 rounded-lg font-semibold hidden"
+                                    >
+                                        Please wait...
+                                    </button>
+                                </form>
+                                <div class="newsletter-success hidden">
+                                    <p
+                                        class="newsletter-success-message text-primary-600 text-normal font-medium mt-2 text-center lg:text-left"
+                                    >
+                                        Thanks, you're the waitlist! We'll be in
+                                        touch soon 🥳
+                                    </p>
+                                </div>
+                                <div class="newsletter-error hidden">
+                                    <p
+                                        class="newsletter-error-message text-red-600 text-sm mt-2 text-center lg:text-left"
+                                    >
+                                        Oops! Something went wrong, please try
+                                        again
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <!-- Screenshot Section -->
-            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div
-                    class="bg-gradient-to-t from-primary-50 to-primary-100 rounded-3xl p-4 screenshot-fade mx-auto max-w-5xl"
-                >
-                    <img
-                        src="https://tailwindcss.com/plus-assets/img/component-images/project-app-screenshot.png"
-                        alt="CampHelp Dashboard Preview"
-                        class="w-full rounded-2xl shadow-2xl"
-                    />
+                    <!-- Right Column: Screenshot -->
+                    <div class="w-full lg:w-2/5 max-w-lg">
+                        <div
+                            class="bg-gradient-to-t from-primary-50 to-primary-100 rounded-3xl p-4 screenshot-fade"
+                        >
+                            <img
+                                src="/images/portal_mobile_2.png"
+                                alt="CampHelp Dashboard Preview"
+                                class="w-full h-96 object-cover object-top rounded-2xl shadow-2xl"
+                            />
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Features Section -->
         <section id="features" class="py-20 bg-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
                     <h2 class="text-4xl font-bold text-gray-900 mb-4">
                         Everything your campers need
@@ -512,7 +517,7 @@
 
         <!-- Footer -->
         <footer id="contact" class="bg-white border-t border-gray-200 py-12">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div
                     class="flex flex-col md:flex-row justify-between items-start mb-8"
                 >
@@ -524,6 +529,20 @@
                         />
                     </div>
                     <div class="flex items-center space-x-6">
+                        <a
+                            href="#"
+                            class="text-gray-500 hover:text-gray-700 transition-colors"
+                        >
+                            <svg
+                                class="w-6 h-6"
+                                fill="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.017-.276.035-.415.056-2.67-.296-5.568.628-6.383 3.364C.378 17.703 0 22.663 0 23.353c0 .688.139 1.86.902 2.202.659.299 1.664.621 4.3-1.239 2.752-1.942 5.711-5.881 6.798-7.995 1.087 2.114 4.046 6.053 6.798 7.995 2.636 1.86 3.641 1.538 4.3 1.239.763-.342.902-1.514.902-2.202 0-.69-.378-5.65-.624-6.479-.815-2.736-3.713-3.66-6.383-3.364-.139.021-.277.039-.415.056.138-.017.276-.035.415-.056 2.67.296 5.568-.628 6.383-3.364.246-.829.624-5.789.624-6.479 0-.688-.139-1.86-.902-2.202-.659-.299-1.664-.621-4.3 1.239-2.752 1.942-5.711 5.881-6.798 7.995z"
+                                />
+                            </svg>
+                        </a>
                         <a
                             href="#"
                             class="text-gray-500 hover:text-gray-700 transition-colors"
@@ -608,9 +627,6 @@
                 var errorMessage = container.querySelector(
                     ".newsletter-error-message",
                 );
-                var backButton = container.querySelector(
-                    ".newsletter-back-button",
-                );
                 var submitButton = container.querySelector(
                     ".newsletter-form-button",
                 );
@@ -624,7 +640,6 @@
                         "Too many signups, please try again in a little while";
                     submitButton.classList.add("hidden");
                     formInput.classList.add("hidden");
-                    backButton.classList.remove("hidden");
                 };
 
                 var time = new Date();
@@ -660,13 +675,16 @@
                     .then(([ok, dataPromise, res]) => {
                         if (ok) {
                             success.classList.remove("hidden");
-                            form.reset();
+                            form.classList.add("hidden");
+                            loadingButton.classList.add("hidden");
                         } else {
                             dataPromise.then((data) => {
                                 errorContainer.classList.remove("hidden");
                                 errorMessage.innerText = data.message
                                     ? data.message
                                     : res.statusText;
+                                loadingButton.classList.add("hidden");
+                                submitButton.classList.remove("hidden");
                             });
                         }
                     })
@@ -679,27 +697,9 @@
                         if (error.message)
                             errorMessage.innerText = error.message;
                         localStorage.setItem("loops-form-timestamp", "");
-                    })
-                    .finally(() => {
-                        form.classList.add("hidden");
-                        backButton.classList.remove("hidden");
+                        loadingButton.classList.add("hidden");
+                        submitButton.classList.remove("hidden");
                     });
-            }
-
-            function resetFormHandler(event) {
-                var container = event.target.parentNode;
-                var form = container.querySelector(".newsletter-form");
-                var success = container.querySelector(".newsletter-success");
-                var errorContainer =
-                    container.querySelector(".newsletter-error");
-                var backButton = container.querySelector(
-                    ".newsletter-back-button",
-                );
-
-                success.classList.add("hidden");
-                errorContainer.classList.add("hidden");
-                backButton.classList.add("hidden");
-                form.classList.remove("hidden");
             }
 
             // Initialize Loops.so form
@@ -715,9 +715,6 @@
                 formContainer
                     .querySelector(".newsletter-form")
                     .addEventListener("submit", submitHandler);
-                formContainer
-                    .querySelector(".newsletter-back-button")
-                    .addEventListener("click", resetFormHandler);
                 formContainer.classList.add("newsletter-handlers-added");
             }
         </script>

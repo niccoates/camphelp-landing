@@ -160,6 +160,12 @@ body {
 .h-16 {
     height: 4rem;
 }
+.h-80 {
+    height: 20rem;
+}
+.h-96 {
+    height: 24rem;
+}
 
 .max-w-md {
     max-width: 28rem;
@@ -308,6 +314,9 @@ body {
 }
 .gap-8 {
     gap: 2rem;
+}
+.gap-12 {
+    gap: 3rem;
 }
 
 /* Flexbox */
@@ -498,6 +507,14 @@ body {
     overflow: hidden;
 }
 
+/* Object positioning */
+.object-cover {
+    object-fit: cover;
+}
+.object-top {
+    object-position: top;
+}
+
 /* Transitions */
 .transition-colors {
     transition-property:
@@ -616,6 +633,19 @@ body {
         font-size: 3rem;
         line-height: 1;
     }
+    .lg\:flex-row {
+        flex-direction: row;
+    }
+    .lg\:text-left {
+        text-align: left;
+    }
+    .lg\:mx-0 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .lg\:w-2\/5 {
+        width: 40%;
+    }
 }
 
 @media (min-width: 640px) {
@@ -655,7 +685,6 @@ a {
     line-height: 1.5rem;
 }
 
-/* Missing responsive utilities */
 @media (min-width: 768px) {
     .md\:flex-row {
         flex-direction: row;
@@ -665,6 +694,9 @@ a {
     }
     .md\:grid-cols-3 {
         grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .md\:inline-block {
+        display: inline-block;
     }
 }
 
